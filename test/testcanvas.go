@@ -5,13 +5,13 @@ import (
 	"image/draw"
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal"
-	"fyne.io/fyne/v2/internal/app"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/scale"
-	"fyne.io/fyne/v2/theme"
+	"github.com/gsmcwhirter/fyne/v2"
+	"github.com/gsmcwhirter/fyne/v2/driver/desktop"
+	"github.com/gsmcwhirter/fyne/v2/internal"
+	"github.com/gsmcwhirter/fyne/v2/internal/app"
+	"github.com/gsmcwhirter/fyne/v2/internal/cache"
+	"github.com/gsmcwhirter/fyne/v2/internal/scale"
+	"github.com/gsmcwhirter/fyne/v2/theme"
 )
 
 var (

@@ -3,6 +3,6 @@
 
 package app
 
-import "fyne.io/fyne/v2"
+import "github.com/gsmcwhirter/fyne/v2"
 
 const buildMode = fyne.BuildDebug

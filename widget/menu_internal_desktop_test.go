@@ -6,10 +6,10 @@ package widget
 import (
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
+	"github.com/gsmcwhirter/fyne/v2"
+	"github.com/gsmcwhirter/fyne/v2/internal/cache"
+	"github.com/gsmcwhirter/fyne/v2/test"
+	"github.com/gsmcwhirter/fyne/v2/theme"
 
 	"github.com/stretchr/testify/assert"
 )

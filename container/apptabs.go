@@ -1,11 +1,11 @@
 package container
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/layout"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"github.com/gsmcwhirter/fyne/v2"
+	"github.com/gsmcwhirter/fyne/v2/canvas"
+	"github.com/gsmcwhirter/fyne/v2/layout"
+	"github.com/gsmcwhirter/fyne/v2/theme"
+	"github.com/gsmcwhirter/fyne/v2/widget"
 )
 
 // Declare conformity with Widget interface.

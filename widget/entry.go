@@ -8,14 +8,14 @@ import (
 	"time"
 	"unicode"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/data/binding"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/driver/mobile"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/theme"
+	"github.com/gsmcwhirter/fyne/v2"
+	"github.com/gsmcwhirter/fyne/v2/canvas"
+	"github.com/gsmcwhirter/fyne/v2/data/binding"
+	"github.com/gsmcwhirter/fyne/v2/driver/desktop"
+	"github.com/gsmcwhirter/fyne/v2/driver/mobile"
+	"github.com/gsmcwhirter/fyne/v2/internal/cache"
+	"github.com/gsmcwhirter/fyne/v2/internal/widget"
+	"github.com/gsmcwhirter/fyne/v2/theme"
 )
 
 const (
