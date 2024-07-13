@@ -234,6 +234,8 @@ func (b *Builder) build() error {
 	args := []string{"build"}
 	env := os.Environ()
 
+	fmt.Fprintf(os.Stderr, "@@@1 %#v\n", env)
+
 	if goos == "darwin" {
 		appendEnv(&env, "CGO_CFLAGS", "-mmacosx-version-min=10.11")
 		appendEnv(&env, "CGO_LDFLAGS", "-mmacosx-version-min=10.11")
@@ -252,6 +254,7 @@ func (b *Builder) build() error {
 			ldFlags += " -H=windowsgui"
 		}
 	}
+	fmt.Fprintf(os.Stderr, "@@@2 %#v\n", env)
 
 	if len(ldFlags) > 0 {
 		args = append(args, "-ldflags", strings.TrimSpace(ldFlags))
