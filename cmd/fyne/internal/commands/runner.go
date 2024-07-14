@@ -34,7 +34,7 @@ func (c *command) runOutput(arg ...string) ([]byte, error) {
 		cmd.Env = c.env
 		c.env = []string{}
 	}
-	fmt.Fprintf(os.Stderr, "!!! %s %v env={%v} dir=%s", c.exe, arg, cmd.Env, cmd.Dir)
+	fmt.Fprintf(os.Stderr, "!!! %s %v env={%v} dir=%s\n", c.exe, arg, cmd.Env, cmd.Dir)
 	return cmd.CombinedOutput()
 }
 
