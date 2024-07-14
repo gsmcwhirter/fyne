@@ -462,10 +462,11 @@ func appendEnv(env *[]string, varName, value string) {
 
 func extractLdflagsFromGoFlags() string {
 	goFlags := os.Getenv("GOFLAGS")
+	fmt.Printf("&&&1 [%s]\n", goFlags)
 
 	ldFlags, goFlags := extractLdFlags(goFlags)
-	fmt.Printf("&&& [%s]\n", ldFlags)
-	fmt.Printf("&&& [%s]\n", goFlags)
+	fmt.Printf("&&&2 [%s]\n", ldFlags)
+	fmt.Printf("&&&3 [%s]\n", goFlags)
 	if goFlags != "" {
 		os.Setenv("GOFLAGS", goFlags)
 	} else {
