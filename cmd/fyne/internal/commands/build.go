@@ -256,7 +256,7 @@ func (b *Builder) build() error {
 			ldFlags += " -H=windowsgui"
 		}
 	}
-	fmt.Fprintf(os.Stderr, "@@@2 %#v\n", env)
+	fmt.Fprintf(os.Stderr, "@@@2 %#v -- [%s]\n", env, ldFlags)
 
 	if len(ldFlags) > 0 {
 		args = append(args, "-ldflags", strings.TrimSpace(ldFlags))
