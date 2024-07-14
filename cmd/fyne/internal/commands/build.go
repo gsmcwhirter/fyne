@@ -224,6 +224,8 @@ func (b *Builder) build() error {
 		}
 	}
 
+	fmt.Fprintf(os.Stderr, "@@@0 %#v\n", os.Environ())
+
 	close, err := injectMetadataIfPossible(fyneGoModRunner, srcdir, b.appData, createMetadataInitFile)
 	if err != nil {
 		fyne.LogError("Failed to inject metadata init file, omitting metadata", err)
