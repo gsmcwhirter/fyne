@@ -464,6 +464,8 @@ func extractLdflagsFromGoFlags() string {
 	goFlags := os.Getenv("GOFLAGS")
 
 	ldFlags, goFlags := extractLdFlags(goFlags)
+	fmt.Printf("&&& [%s]\n", ldFlags)
+	fmt.Printf("&&& [%s]\n", goFlags)
 	if goFlags != "" {
 		os.Setenv("GOFLAGS", goFlags)
 	} else {
